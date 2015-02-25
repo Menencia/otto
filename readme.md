@@ -5,8 +5,8 @@ With this script, you can easily update a git repo.
 ## Install
 
 ```
-curl -# https://gist.githubusercontent.com/Menencia/6435756/raw/update.sh > update.sh
-curl -# https://gist.githubusercontent.com/Menencia/6435756/raw/version.sh > version.sh
+curl -# https://raw.githubusercontent.com/Menencia/otto/master/update.sh > update.sh
+curl -# https://raw.githubusercontent.com/Menencia/otto/master/version.sh > version.sh
 ```
 
 ## Ini file sample
