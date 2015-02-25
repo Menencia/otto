@@ -346,8 +346,8 @@ INI_FILE=config.ini
 # SOURCE
 src=$(pwd)
 
-# GIST PATH
-gist="https://gist.githubusercontent.com/Menencia/6435756/raw/"
+# GIT PATH
+git="https://raw.githubusercontent.com/Menencia/otto/master/"
 
 # VERSION
 if [[ -f version.txt ]]; then
@@ -360,8 +360,8 @@ fi
 if [[ $1 = 'update' ]]; then
   read -p "Confirm update ? [y/n]" confirm
   if [[ $confirm = 'y' ]]; then
-    curl -# $gist"update.sh" > $src/update.sh
-    curl -# $gist"version.txt" > $src/version.txt
+    curl -# $git"update.sh" > $src/update.sh
+    curl -# $git"version.txt" > $src/version.txt
     log "info" "Updated!"
     log "warn" "Please restart."
   else
@@ -372,7 +372,7 @@ if [[ $1 = 'update' ]]; then
 fi
 
 if [[ $1 = 'version' ]]; then
-  version=$(curl -s $gist"version.txt")
+  version=$(curl -s $git"version.txt")
   log "info" "VERSION $v (Current: $version) by Menencia"
   if [[ $v != $version ]]; then
     log "warn" "Please update this script: ./update.sh update"
