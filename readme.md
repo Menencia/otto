@@ -47,9 +47,10 @@ project   install           Execute scripts/install.sh
 go                  <name>  Go to another project state
 ls                  <name>  List all files of the givern folder
 clean                       Delete already-merged branches
-composer  install           Install/update packages
+composer  install           Install packages
+          update            Update packages
           list              List installed packages
-sh        <path>            Execute the script path (without .sh)
+sh        <path>            Execute the script path
 quit                        Quit this script
 ```
 

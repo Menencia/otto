@@ -27,7 +27,7 @@ function autocomplete
   history -s "branch all go pull hardpull diff clean reset delete"
   history -s "tag get all go"
   history -s "project install update chown"
-  history -s "composer install list"
+  history -s "composer install update list"
   history -s "ls clean script quit"
 }
 
@@ -171,6 +171,10 @@ function cmd_composer
       ~/composer.phar install --no-dev
       ;;
 
+    update)
+      ~/composer.phar update --no-dev
+      ;;
+
     list)
       ~/composer.phar show -i
       ;;
@@ -234,7 +238,8 @@ project   install           Execute scripts/install.sh
 go                  <name>  Go to another project state
 ls                  <name>  List all files of the givern folder
 clean                       Delete already-merged branches
-composer  install           Install/update packages
+composer  install           Install packages
+          update            Update packages
           list              List installed packages
 sh        <path>            Execute the script path
 quit                        Quit this script
