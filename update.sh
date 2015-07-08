@@ -192,18 +192,18 @@ function cmd_project
       if [ -f scripts/install.sh ]; then
         log "info" "$(pwd)/scripts/install.sh"
         bash scripts/install.sh
-      else
+      #else
         #log "error" "Script not found!"
-      fi
+      #fi
       ;;
 
     update)
       if [ -f scripts/update.sh ]; then
         log "info" "$(pwd)/scripts/install.sh"
         bash scripts/update.sh
-      else
+      #else
         #log "error" "Script not found!"
-      fi
+      #fi
       ;;
 
     chown)
