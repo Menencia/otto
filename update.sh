@@ -109,7 +109,7 @@ function cmd_branch
     pull)
       git fetch -q
       git pull -a
-      random_phrase
+      #random_phrase
       ;;
 
     hardpull)
@@ -193,7 +193,7 @@ function cmd_project
         log "info" "$(pwd)/scripts/install.sh"
         bash scripts/install.sh
       else
-        log "error" "Script not found!"
+        #log "error" "Script not found!"
       fi
       ;;
 
@@ -202,7 +202,7 @@ function cmd_project
         log "info" "$(pwd)/scripts/install.sh"
         bash scripts/update.sh
       else
-        log "error" "Script not found!"
+        #log "error" "Script not found!"
       fi
       ;;
 
