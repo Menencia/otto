@@ -194,7 +194,7 @@ function cmd_project
         bash scripts/install.sh
       #else
         #log "error" "Script not found!"
-      #fi
+      fi
       ;;
 
     update)
@@ -203,7 +203,7 @@ function cmd_project
         bash scripts/update.sh
       #else
         #log "error" "Script not found!"
-      #fi
+      fi
       ;;
 
     chown)
